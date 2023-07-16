@@ -6,6 +6,7 @@ const app = express()
 app.use(express.json())
 app.use("/users", userRoute)
 app.use("/posts", postsRoute)
+const cors = require("cors")
 
 
 app.get("/",(req,res)=>{
